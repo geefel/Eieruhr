@@ -3,9 +3,11 @@
 *.pro.*
 
 # avrdude
-*.dch
 *.bin
 *.hex
+
+# diptrace
+*.dch~
 
 # Prerequisites
 *.d
