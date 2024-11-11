@@ -12,7 +12,7 @@
 #define TASTE_2 PINDEF(C, 2)    //..
 #define TASTE_3 PINDEF(C, 3)
 #define TASTE_4 PINDEF(C, 4)
-#define TASTE_5 PINDEF(C, 5)
+//#define TASTE_5 PINDEF(C, 5)
 
 #define ALARM_MAX 4
 #define DIM_MAX   7
@@ -84,7 +84,7 @@ void init_PCINT_Interrupt() {
     setInputPullup(TASTE_2);
     setInputPullup(TASTE_3);
     setInputPullup(TASTE_4);
-    setInputPullup(TASTE_5);
+//    setInputPullup(TASTE_5);
     PCICR  |=  1 << PCIE1;	 //Interruptfreigabe für PCINT1
     PCMSK1 |= (1 << PCINT9) | (1 << PCINT10) | (1 << PCINT11) | (1 << PCINT12) | (1 << PCINT13); //Pegelwechsel an PCINTn löst Interrupt aus
 }
